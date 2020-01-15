@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>
+            Bug Report
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr id="titleRow">
+                <td id="titleColumn" class="titleColumn">
+                    <h1 id="title" class="title">
+                        Bug report
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr id="versionRow" class="sectionTextRow">
+                <td id="versionTextColumn" class="sectionTextColumn">
+                    <h2 id="versionText" class="sectionText">
+                        Versie-informatie
+                    </h2>
+                </td>
+            </tr>
+            <tr id="platformRow" class="inputRow">
+                <td id="platformTextColumn" class="inputColumn">
+                    <h3 id="platformText" class="inputLabel">
+                        Platform: 
+                    </h3>
+                </td>
+                <td id="versionInputColumn" class="inputColumn">
+                    <select id="versionSelect" class="dropdownInput" required>
+                        <option value="webgl">
+                            WebGL
+                        </option>
+                        <option value="ios">
+                            IOS
+                        </option>
+                        <option value="android">
+                            Android
+                        </option>
+                        <option value="editor">
+                            Editor
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="branchRow" class="inputRow">
+                <td id="branchTextColumn" class="inputColumn">
+                    <h3 id="branchText" class="inputLabel">
+                        Branch
+                    </h3>
+                </td>
+                <td id="branchInputColumn" class="inputColumn">
+                    <input type="text" name="branchInput" id="branchInput" class="textInput" required>
+                </td>
+            </tr>
+            <tr id="commitRow" class="inputRow">
+                <td id="commitTextColumn" class="inputColumn">
+                    <h3 id="commitText" class="inputLabel">
+                        Commit
+                    </h3>
+                </td>
+                <td id="commitInputColumn" class="inputColumn">
+                    <input type="text" name="commitInput" id="commitInput" class="textInput" required>
+                </td>
+            </tr>
+            <tr id="bugTextRow" class="sectionTextRow">
+                <td id="bugTextColumn" class="sectionTextColumn">
+                    <h2 id="bugText" class="sectionText">
+                        Informatie omtrent de bug.
+                    </h2>
+                </td>
+            </tr>
+            <tr id="bugLocationRow" class="inputRow">
+                <td id="bugLocationTextColumn" class="inputColumn">
+                    <h3 id="bugLocationText">
+                        Locatie van de bug
+                    </h3>
+                    <p>In welke scene gebeurt de bug?</p>
+                </td>
+                <td id="bugLocationInputColumn" class="inputColumn">
+                    <select id="bugLocationInput" class="dropdownInput">
+                        <option value="mainMenu">
+                            Hoofdmenu
+                        </option>
+                        <option value="tutorial">
+                            Tutorial
+                        </option>
+                        <option value="handOfGod">
+                            Hand Of God
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="bugClassificationRow" class="inputRow">
+                <td id="bugClassificationTextColumn" class="inputColumn">
+                    <h3 id="bugClassificationText" class="inputLabel">
+                        Soort bug:
+                    </h3>
+                </td>
+                <td id="bugClassificationInputColumn" class="inputColumn">
+                    <select id="bugClassificationSelect" class="dropdownInput">
+                        <option value="visualGlitch">
+                            Visuele glitch
+                        </option>
+                        <option value="unexpectedBehaviour">
+                            Onverwacht gedrag
+                        </option>
+                        <option value="gameUnwinnable">
+                            Onwinbare situatie
+                        </option>
+                        <option value="gameCrash">
+                            Game crash
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="bugDescriptionRow" class="inputRow">
+                <td id="bugDescriptionTextColumn" class="inputColumn">
+                    <h3 id="bugDescriptionText" class="inputLabel">
+                        Beschrijf de bug
+                    </h3>
+                    <p>Beschrijf de bug zo compleet mogelijk. Wat klopt er niet? Wat zou er moeten gebeuren?</p>
+                </td>
+                <td id="bugDescriptionInputColumn" class="inputColumn">
+                    <textarea id="bugDescriptionInput" class="textInput">
+                        
+                    </textarea>
+                </td>
+            </tr>
+            <tr id="reproductionInputRow" class="inputRow">
+                <td id="reproductionTextColumn" class="inputColumn">
+                    <h3 id="reproductionText" class="inputLabel">
+                        Reproductiestappen
+                    </h3>
+                    <p>Welke stappen moet je maken om de bug te laten gebeuren?</p>
+                </td>
+                <td id="reproductionInputColumn" class="inputColumn">
+                    <div id="reproductionInputStep0" class="multipleTextInputDiv">
+                        <input type="text" name="reproductionInput0" id="reproductionInput0" class="textInput">
+                    </div>
+                    <div id="reproductionInputStep1" class="multipleTextInputDiv">
+                        <input type="text" name="reproductionInput1" id="reproductionInput1" class="textInput">
+                    </div>
+                    <div id="reproductionInputStep2" class="multipleTextInputDiv">
+                        <input type="text" name="reproductionInput2" id="reproductionInput2" class="textInput">
+                    </div>
+                    <button type="button" id="removeStepButton" class="button">Verwijder stap</button>
+                    <button type="button" id="addStepButton" class="button">Voeg stap toe</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
